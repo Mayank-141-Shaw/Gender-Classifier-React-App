@@ -5,7 +5,7 @@ function HomeComponent() {
     <div style={{
         fontSize:'50px', 
         fontWeight:'bold',
-        color:'red',
+        color:'blue',
         padding:'auto',
         textAlign:'center',
         height:'100vh',
