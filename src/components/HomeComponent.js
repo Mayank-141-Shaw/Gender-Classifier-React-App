@@ -23,12 +23,19 @@ function HomeComponent() {
     background-color : grey;
   `;
 
+  let user = {
+    'name':'Mayank Kumar Shaw',
+    'job':'Full Stack ML Developer',
+    'email':'mayank141shaw@gmail.com',
+    'company':'Google'
+  }
+
   return (
     <>
 
       <Background>
 
-        <DetailsComponent />
+        <DetailsComponent user={user}/>
 
         <AddUserButton>
           <NavLink to={"/add"} 
