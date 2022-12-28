@@ -27,15 +27,42 @@ function HomeComponent() {
     'name':'Mayank Kumar Shaw',
     'job':'Full Stack ML Developer',
     'email':'mayank141shaw@gmail.com',
-    'company':'Google'
+    'company':'Google',
+    'city':'Kolkata',
+    'age':'22',
+    'gender':'M'
   }
+
+  let users = [
+    {
+      'name':'Mayank Kumar Shaw',
+      'job':'Full Stack ML Developer',
+      'email':'mayank141shaw@gmail.com',
+      'company':'Google',
+      'city':'Kolkata',
+      'age':'22',
+      'gender':'M'
+    },
+    {
+      'name':'Mayank Kumar Shaw',
+      'job':'Full Stack ML Developer',
+      'email':'mayank141shaw@gmail.com',
+      'company':'Google',
+      'city':'Kolkata',
+      'age':'22',
+      'gender':'M'
+    }
+  ]
 
   return (
     <>
 
       <Background>
 
-        <DetailsComponent user={user}/>
+        {
+          users.map( user => <DetailsComponent user={user}/> )
+        }
+        {/* // <DetailsComponent user={user}/> */}
 
         <AddUserButton>
           <NavLink to={"/add"} 
