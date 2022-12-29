@@ -3,20 +3,21 @@ import React from 'react'
 function Navbar() {
   return (
     <>
-        <header style={{
+        <nav style={{
             display : 'flex',
             flexDirection : 'row',
             backgroundColor : 'lightblue',
             justifyContent : 'center',
             alignItems : 'center',
             fontSize : '1.5rem',
-            position : 'fixed',
+            position : 'sticky',
             top : '0',
-            width : '100%',
-            margin : 'auto auto 1.5rem auto'
+            width : 'inherit',
+            padding : '0.75rem 0.2rem',
+            
         }}>
             PROFILER    
-        </header>
+        </nav>
     </>
   )
 }

@@ -15,7 +15,8 @@ function HomeComponent() {
   `;
   
   const Background = styled.div`
-    padding : auto;
+    width : inherit;
+    padding : 1rem;
     text-align : center;
     background-color : grey;
   `;
