@@ -86,7 +86,7 @@ function AddUserComponent() {
 
       <form style={addUserForm} onSubmit={handleSubmit}>
         
-        <label for='profileImg'>
+        <label htmlFor='profileImg'>
           <img 
             style={{
               width:'50vw',

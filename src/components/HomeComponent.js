@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { MdAddCircle } from 'react-icons/md'
+import { TiUserAdd } from 'react-icons/ti'
 import DetailsComponent from './DetailsComponent';
 import Navbar from './Navbar';
 
@@ -9,9 +9,12 @@ function HomeComponent() {
 
   const AddUserButton = styled.div`
     position : fixed;
-    bottom : 10px;
+    bottom : 0px;
     right : 10px;
-    font-size : 3rem;
+    display: flex;
+    flex-direction:row;
+    align-items : center;
+
   `;
   
   const Background = styled.div`
@@ -54,15 +57,18 @@ function HomeComponent() {
         <AddUserButton>
           <NavLink to={"/add"} 
             style={{
-              textDecoration:'none', 
-              color:'orange'
+              fontSize:'3rem'
             }} >
 
-            <MdAddCircle 
+            <TiUserAdd 
               style={{
-                verticalAlign:'middle',
+                textAlign:'center',
+                color:'white',
+                backgroundColor:'orange',
+                borderRadius:'50%',
+                padding:'1rem'
               }} 
-              size={'2em'}
+              size={'1em'}
             />
 
           </NavLink>
