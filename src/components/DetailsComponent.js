@@ -34,7 +34,6 @@ function DetailsComponent(user) {
     `;
 
     const ProfileImage = styled.img`
-        width : 50px;
         border-radius : 50%;
         // background-color : #fe2a5c;
         background-color : lightgrey;
@@ -140,7 +139,9 @@ function DetailsComponent(user) {
             :
             <DetailBox onClick={toggle}>
                 <ProfileImageContainer>
-                    <ProfileImage src={ user.user.img ? user.user.img : defUserImg} />
+                    <ProfileImage
+                        style={{width:'3.5rem'}} 
+                        src={ user.user.img ? user.user.img : defUserImg} />
                 </ProfileImageContainer>
                 
                 <InfoBox>

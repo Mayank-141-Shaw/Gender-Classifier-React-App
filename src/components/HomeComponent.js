@@ -55,12 +55,12 @@ function HomeComponent() {
           <NavLink to={"/add"} 
             style={{
               textDecoration:'none', 
-              color:'blue'
+              color:'orange'
             }} >
 
             <MdAddCircle 
               style={{
-                verticalAlign:'middle'
+                verticalAlign:'middle',
               }} 
               size={'2em'}
             />
