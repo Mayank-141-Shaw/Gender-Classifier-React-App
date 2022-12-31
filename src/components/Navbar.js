@@ -1,4 +1,6 @@
 import React from 'react'
+import { MdHomeFilled } from 'react-icons/md'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -14,9 +16,8 @@ function Navbar() {
             top : '0',
             width : 'inherit',
             padding : '0.75rem 0.2rem',
-            
         }}>
-            PROFILER    
+            <span style={{textAlign:'center'}}>PROFILER</span>    
         </nav>
     </>
   )

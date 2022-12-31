@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { Route, Router } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import defUserImg from '../assets/default-user.png'
 
 function AddUserComponent() {
+
+  const navigate = useNavigate()
 
   const [inputs, setInputs] = useState({});
 
@@ -16,7 +18,7 @@ function AddUserComponent() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+    navigate('/')
   }
 
 
@@ -42,7 +44,8 @@ function AddUserComponent() {
     border : '2px solid #808080',
     borderRadius : '5px',
     padding : '0.75rem 1.5rem',
-    alignSelf : 'center'
+    alignSelf : 'center',
+    margin : '1rem 0'
   }
 
   const subDiv = {
